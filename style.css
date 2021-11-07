@@ -292,9 +292,9 @@ body{
     100%{transform: translateX(-1600px);}
 }
 @keyframes wheel {
-    50%{transform:  rotate(360deg);}
+    50%{transform:  rotate(500deg);}
     75%{transform: translateX(-500px);}
-    100%{transform: translateX(0px) rotate(360deg);}
+    100%{transform: translateX(0px) rotate(720deg);}
 }
 @keyframes flag {
     50%{transform: translateY(-2px);}

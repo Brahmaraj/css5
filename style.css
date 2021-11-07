@@ -269,6 +269,7 @@ body{
     0px 0px 50px 20px #FFD07F,
     0px 0px 100px 40px #FDA65D,
     inset 10px 10px 50px #FFF9B6;
+    z-index: 2;
 }
 .text{
     display: flex;
@@ -287,6 +288,23 @@ body{
 .text3{
     margin-left: 0.4em;
     background-color: green;
+}
+.aeroplane{
+    position: absolute;
+    width: 200px;
+    top: 20%;
+    height: 200px;
+    z-index: 3;
+}
+.aeroplane img{
+    width: 100px;
+    animation: aeroplaneanimation 30s linear infinite;
+}
+@keyframes aeroplaneanimation {
+    0%{transform: translateX(-100px) translateY(-100px) ;}
+    25%{transform: translateY(15px) translateX(50px) rotate(-15deg);}
+    50%{transform:  translateY(-15px);}
+    100%{transform:  translateX(1900px) translateY(-50px) ;}
 }
 @keyframes sun {
     100%{transform: translateX(-1600px);}

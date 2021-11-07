@@ -96,7 +96,7 @@
     animation-iteration-count: infinite;
 }
 body{
-    background-color: #F8DF8B;
+    background-color: #E6E6E6;
     padding-bottom: 20px;
 }
 .container2{
@@ -294,17 +294,17 @@ body{
 @keyframes wheel {
     50%{transform:  rotate(500deg);}
     75%{transform: translateX(-500px);}
-    100%{transform: translateX(0px) rotate(720deg);}
+    100%{transform: translateX(0px) rotate(720deg) ;}
 }
 @keyframes flag {
     50%{transform: translateY(-2px);}
     75%{transform: translateX(-500px);}
-    100%{transform: translateY(0px) translateX(0px);}
+    100%{transform: translateY(0px) translateX(0px) ;}
 }
 @keyframes caranimation {
     50%{transform: translateY(-2px) ;}
     75%{transform: translateX(-500px);}
-    100%{transform: translateY(0px) translateX(0px);}
+    100%{transform: translateY(0px) translateX(0px) ;}
 }
 @keyframes skyscraper {
     100%{transform: translateX(-2400px);}

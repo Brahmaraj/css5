@@ -216,7 +216,7 @@ body{
 }
 .car img{
     width: 100%;
-    animation: caranimation 1s linear infinite;
+    animation: caranimation 10s linear infinite;
 }
 .wheel{
     position: absolute;
@@ -228,7 +228,7 @@ body{
 .wheel img{
     width: 72px;
     height: 72px;
-    animation: wheel 2s linear infinite;
+    animation: wheel 10s linear infinite;
 }
 .backwheel{
     left: -140px;
@@ -247,7 +247,7 @@ body{
 .flag img{
     width: 72px;
     height: 72px;
-    animation: flag 1s linear infinite;
+    animation: flag 10s linear infinite;
 }
 .indiaflag{
     position: absolute;
@@ -292,17 +292,19 @@ body{
     100%{transform: translateX(-1600px);}
 }
 @keyframes wheel {
-    100%{transform: rotate(360deg);}
+    50%{transform:  rotate(360deg);}
+    75%{transform: translateX(-500px);}
+    100%{transform: translateX(0px) rotate(360deg);}
 }
 @keyframes flag {
-    0%{transform: translateY(0px);}
     50%{transform: translateY(-2px);}
-    100%{transform: translateY(0px);}
+    75%{transform: translateX(-500px);}
+    100%{transform: translateY(0px) translateX(0px);}
 }
 @keyframes caranimation {
-    0%{transform: translateY(0px);}
-    50%{transform: translateY(-2px);}
-    100%{transform: translateY(0px);}
+    50%{transform: translateY(-2px) ;}
+    75%{transform: translateX(-500px);}
+    100%{transform: translateY(0px) translateX(0px);}
 }
 @keyframes skyscraper {
     100%{transform: translateX(-2400px);}
